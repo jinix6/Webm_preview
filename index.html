@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>@Jinxx6_6_real_1</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <video width="600" height="100%" autoplay loop muted playsinline>
+    <source 
+        src="" 
+        type="video/webm">
+</video>
+
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoParam = urlParams.get('video'); // Assuming 'video' is the parameter name
+
+    // Update the video source with the extracted parameter
+    const videoElement = document.querySelector('video');
+    videoElement.src = videoParam;
+  </script>
+</body>
+</html>
