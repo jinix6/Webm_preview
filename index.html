@@ -4,30 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>@Jinxx6_6_real_1</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+ <style>
+   body {
+  background-image: url(transparent-background-pattern.svg);
+  background-size: 200%;
+}
+video{
+  width: 90%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ </style>
 </head>
-
 <body>
-    
+ 
   <video width="600" height="100%" autoplay loop muted playsinline>
     <source 
         src="" 
         type="video/webm">
 </video>
-
-
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const videoParam = urlParams.get('video'); // Assuming 'video' is the parameter name
-
-    // Update the video source with the extracted parameter
+    const videoParam = urlParams.get('video');
     const videoElement = document.querySelector('video');
     videoElement.src = videoParam;
   </script>
